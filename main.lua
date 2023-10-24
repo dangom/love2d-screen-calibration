@@ -18,15 +18,15 @@ end
 
 function love.update(dt)
     if not calibrationConfirmed then
-        if love.keyboard.isDown("up") then
+        if love.keyboard.isDown("3") then
             crossY = crossY - moveSpeed
-        elseif love.keyboard.isDown("down") then
+        elseif love.keyboard.isDown("4") then
             crossY = crossY + moveSpeed
         end
 
-        if love.keyboard.isDown("left") then
+        if love.keyboard.isDown("2") then
             crossX = crossX - moveSpeed
-        elseif love.keyboard.isDown("right") then
+        elseif love.keyboard.isDown("5") then
             crossX = crossX + moveSpeed
         end
     end
